@@ -1,0 +1,102 @@
+[
+    {
+       "img" : "http://www.edam-ent.com/html/images/album_202103.jpg",
+        "name" : "정규 5집 IU 5th Album 'LILAC' [라일락], [Coin], [Celebrity]",
+        "date" : "2021.03.25"
+    },
+    {
+        "img" : "http://www.edam-ent.com/html/images/album_1.jpg",
+         "name" : "디지털 싱글 에잇 [에잇 (Prod.&Feat. SUGA of BTS)]",
+         "date" : "2020.05.06"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_2.jpg",
+         "name" : "미니 5집 Love poem [Blueming], [Love poem]",
+         "date" : "2019.11.18"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_3.jpg",
+         "name" : "디지털 싱글 삐삐 [삐삐]",
+         "date" : "2018.10.10"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_4.jpg",
+         "name" : "리메이크 2집 꽃갈피 둘 [잠 못 드는 밤 비는 내리고], [가을 아침]",
+         "date" : "2017.09.22"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_5.jpg",
+         "name" : "정규 4집 Palette [팔레트 (Feat. G-DRAGON)], [이름에게], [밤편지], [사랑이 잘 (With 오혁)]",
+         "date" : "2017.04.21"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_6.jpg",
+         "name" : "미니 4집 CHAT-SHIRE [스물셋]",
+         "date" : "2015.10.23"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_7.jpg",
+         "name" : "디지털 싱글 마음 [마음]",
+         "date" : "2015.05.18"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_8.jpg",
+         "name" : "리메이크 1집 꽃갈피 [나의 옛날이야기], [너의 의미 (Feat. 김창완)]",
+         "date" : "2014.05.16"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_9.jpg",
+         "name" : "정규 3집 리패키지 Modern Times Epilogue [금요일에 만나요]",
+         "date" : "2013.12.20"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_10.jpg",
+         "name" : "정규 3집 Modern Times [분홍신]",
+         "date" : "2013.10.08"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_11.jpg",
+         "name" : "맥시 싱글 스무 살의 봄 [하루 끝]",
+         "date" : "2012.05.11"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_12.jpg",
+         "name" : "정규 2집 Last Fantasy [너랑 나]",
+         "date" : "2011.11.29"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_13.jpg",
+         "name" : "디지털 싱글 얼음꽃 [얼음꽃 (With 김연아)]",
+         "date" : "2011.06.21"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_14.jpg",
+         "name" : "미니 3집 확장팩 Real+ [나만 몰랐던 이야기]",
+         "date" : "2011.02.17"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_15.jpg",
+         "name" : "미니 3집 Real [좋은 날]",
+         "date" : "2010.12.09"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_16.jpg",
+         "name" : "2010.06.03 디지털 싱글 잔소리 [잔소리]",
+         "date" : "2010.06.03"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_17.jpg",
+         "name" : "미니 2집 IU...IM [Marshmallow]",
+         "date" : "2009.11.12"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_18.jpg",
+         "name" : "정규 1집 Growing Up [Boo]",
+         "date" : "2009.04.23"
+     },
+     {
+        "img" : "http://www.edam-ent.com/html/images/album_19.jpg",
+         "name" : "미니 1집 Lost And Found [미아]",
+         "date" : "2008.09.23"
+     }
+]

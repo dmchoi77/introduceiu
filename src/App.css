@@ -1,0 +1,357 @@
+* {
+  text-decoration: none;
+  font-family: 'Koh Santepheap';
+  list-style:none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: 'Koh Santepheap';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/kohsantepheap/v1/gNMeW3p6SJbwyGj2rBZyeOrTjNtNP0y-kj5iS2z4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@keyframes leftcontent-slidein {
+  0% {
+    left: -10%;
+  }
+  100% {
+    left: 43%;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    left: -40%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slideout {
+  0% {
+    left : 0%;
+  }
+  100% {
+    left :-40%;
+  }
+}
+
+body {
+  background-color: black;
+}
+  
+.App {
+  text-align: center;
+}
+
+.main_bkbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  z-index: 9;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/* header */
+.artist-name {
+  font-family: 'Koh Santepheap';
+  position: absolute;
+  top: 50px;
+  right: 3%;
+  z-index: 1;
+  height: 43px;
+  font-size: 60px;
+  color :#ffff;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 999;
+  background-color: none;
+}
+
+/* menu */
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu li {
+  padding : 10pt;
+  font-size: 20pt;
+}
+
+.menu li:hover {
+  color : #f600fbd4;
+}
+
+.menu-button {
+  position: absolute;
+  top: 60px;
+  left: 2%;
+  z-index: 1111111111;
+  display: inline-block;
+  white-space: nowrap;
+  width: 40px;
+  height: 40px;
+  border : none;
+  background: none;
+}
+
+.menu-button img {
+  width: 100%;
+}
+
+
+.cancel-button {
+  position: absolute;
+  top: 60px;
+  left: 2%;
+  z-index: 1111111112;
+  display: inline-block;
+  white-space: nowrap;
+  width: 40px;
+  height: 40px;
+  border : none;
+  background: none;
+}
+
+.cancel-button img {
+  width: 100%;
+}
+
+.left-content {
+  position: absolute;
+  width: 750px;
+  left: 0%;
+  top: 25%;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  animation-name: leftcontent-slidein;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-duration: leaner;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+}
+
+.album-name {
+  display: inline-block;
+  color: #ffff;
+  font-size: 30pt;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 90px;
+  margin-bottom: 20px;
+  word-break: keep-all;    
+
+}
+
+.main-title a {
+  font-family: 'Koh Santepheap';
+  display: inline-block;
+  color: #ffff;
+  font-size: 20pt;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-right: 5px;
+  padding : 5px;
+  cursor: pointer;
+}
+
+/* youtube background */
+.youtube-background {
+  width : 100%;
+  height: 100%;
+  z-index : 0;
+  position: absolute;
+  overflow: hidden;
+  inset: 0px;
+  pointer-events: none;  
+  background-image: url(https://i.ytimg.com/vi/v7bnOxV4jAc/original.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.youtube-background iframe {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  height: 2160px;
+
+}
+
+/* side bar */
+.side-nav {
+  width : 1000px;
+}
+
+.show-side-nav {
+  width : 200px;
+  height : 100%;
+  background-color: black;
+  z-index : 12;
+  position : absolute;
+  top: 0;
+  left: 0;
+  color : white;
+  list-style:none;
+  display: flex;
+  flex-direction : column;
+  justify-content : center;
+
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-duration: leaner;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+}
+
+.hide-side-nav {
+  width : 200px;
+  height : 100%;
+  background-color: black;
+  z-index : 12;
+  position : absolute;
+  top: 0;
+  left: -41px;
+  color : white;
+  display : flex;
+  flex-direction : column;
+  justify-content : center;
+
+  animation-name: slideout;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-duration: leaner;
+  animation-direction:alternate;
+  animation-fill-mode: forwards;
+}
+
+
+.contents-container {
+  position : absolute;
+  width: 100%;
+  height: 100%;
+  z-index : 1111111112;
+  background-color: white;
+  color : black;
+  text-align: start;
+  align-items: center;
+  overflow: scroll;
+}
+
+/* profile page */
+
+.profile-content {
+  position: relative;
+  font-size: 15pt;
+  width : 800px;
+  margin : auto;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
+}
+
+.profile-content ul {
+  padding : 60px;
+  text-align: start;
+}
+
+.profile-content li {
+  padding : 1.5px;
+  text-align: start;
+}
+
+.profile-title {
+  font-size: 35pt;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom : -50px;
+}
+
+
+/* Works page */
+.works-content {
+  padding : 50pt 100pt;
+  position: relative;
+  left : -200px;
+  font-size: 10pt;
+  height: 100%;
+  margin : auto;
+  font-weight: 500;
+  display: flex;
+  flex-direction : column;
+  align-items : center;
+}
+
+.works-title {
+  font-size: 35pt;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom : -50px;
+}
+
+.album-wrapper {
+  height: 80px;
+  padding: 20px;
+}
+ 
+.album-art {
+  width : 80px;
+  height: 80px;
+  display: inline-block;
+}
+
+.album-info {
+  padding-left : 10px;
+  position: absolute;
+  display: inline-block;
+  height: 80px;
+}
+
+/* footer */
+.footer {
+  width : 100%;
+  bottom : 1%;
+  right : 1%;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer img {
+  width :30px;
+  height: 30px;
+  padding : 5px;
+  filter :invert();
+}
+
