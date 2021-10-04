@@ -9,7 +9,7 @@ function Works() {
 
     const content = list.map((data, i) =>
         <div className="album-wrapper">
-            <img className="album-art" key={i} src={data.img} />
+            <img className="album-art" key={i} src={`img/album/${i + 1}.jpeg`} />
             <div className="album-info">
                 <h2 className="album-title">{data.name}</h2>
                 <p className="album-release">{data.date}</p>
