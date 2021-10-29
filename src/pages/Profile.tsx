@@ -1,20 +1,20 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-function Profile(): JSX.Element {
+const Profile: React.FC = () => {
     const history = useHistory();
 
     return (
         <div className="contents-container">
             <div className="contents-header">
-                <img className="artist-name" src="img/iu_logo.png" style={{ filter: "invert(100%)" }} />
+                <img className="artist-name" src="img/iu_logo.png" style={{ filter: "invert(100%)" }} alt="logo" />
                 <button className="cancel-button" onClick={(): void => { history.push('/') }}>
-                    <img src="img/cancel.png" ></img>
+                    <img src="img/cancel.png" alt="cancel-button"></img>
                 </button>
             </div>
             <h1 className="profile-title">Profile</h1>
             <div className="profile-content">
-                <img src="img/iu_1.jpeg" ></img>
+                <img src="img/iu_1.jpeg" alt="profile" ></img>
                 <ul>
                     <h3>IU (이지은)</h3>
                     <li>가수, 탤런트</li>
