@@ -4,11 +4,11 @@ import { Link, Route } from 'react-router-dom';
 import Profile from './Profile';
 import Works from './Works';
 
-function App() {
+function App(): JSX.Element {
 
-  const [toggle, setToggle] = useState(null);
+  const [toggle, setToggle] = useState<null | Boolean>(null);
 
-  const toggleMenu = () => {
+  const toggleMenu = (): void => {
     setToggle(!toggle);
   }
 
@@ -20,10 +20,10 @@ function App() {
       <Route exact path="/profile" component={Profile} />
 
       <div className="Container">
-        <div class="main_bkbg"></div>
+        <div className="main_bkbg" />
         {/* 유튜브배경 */}
         <div className="youtube-background">
-          <iframe src="https://www.youtube.com/embed/v7bnOxV4jAc?start=125&autoplay=1&amp;playlist=v7bnOxV4jAc&amp;mute=1&amp;loop=1" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+          <iframe src="https://www.youtube.com/embed/v7bnOxV4jAc?start=125&autoplay=1&amp;playlist=v7bnOxV4jAc&amp;mute=1&amp;loop=1" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
         </div>
         {/* 헤더 */}
         <div className="header">

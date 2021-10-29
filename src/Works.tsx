@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import worklist from './worklist.json';
 
-function Works() {
+function Works(): JSX.Element {
 
     const [list, setList] = useState(worklist);
     const history = useHistory();
@@ -21,7 +21,7 @@ function Works() {
         <div className="contents-container">
             <div className="contents-header">
                 <img className="artist-name" src="img/iu_logo.png" style={{ filter: "invert(100%)" }} />
-                <button className="cancel-button" onClick={() => { history.push('/') }}>
+                <button className="cancel-button" onClick={()=> { history.push('/') }}>
                     <img src="img/cancel.png" ></img>
                 </button>
             </div>
