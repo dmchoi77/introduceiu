@@ -1,21 +1,13 @@
-import React, { useState } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import worklist from '../worklist.json';
+import useInfiniteScroll from '../hooks/useInfiniteScroll'
 
-function Works(): JSX.Element {
+const Works: FunctionComponent = function () {
 
     const [list, setList] = useState(worklist);
     const history = useHistory();
-
-    const content = list.map((data, i) =>
-        <div className="album-wrapper">
-            <img className="album-art" key={i} src={`img/album/${i + 1}.jpeg`} alt="album-art" />
-            <div className="album-info">
-                <h2 className="album-title">{data.name}</h2>
-                <p className="album-release">{data.date}</p>
-            </div>
-        </div>
-    );
+    const { containerRef, items } = useInfiniteScroll(list)
 
     return (
         <div className="contents-container">
@@ -26,8 +18,19 @@ function Works(): JSX.Element {
                 </button>
             </div>
             <h1 className="works-title">Works</h1>
-            <div className="works-content">
-                {content}
+            <div className="works-content" ref={containerRef}>
+                {
+                    items.map((data, index) =>
+                        <div className="album-wrapper" key={index}>
+                            <img className="album-art" src={`img/album/${index + 1}.jpeg`} alt="album-art" />
+                            <div className="album-info">
+                                <h2 className="album-title">{data.name}</h2>
+                                <p className="album-release">{data.date}</p>
+                            </div>
+                        </div>
+                    )
+                }
+
             </div>
         </div>
     )
