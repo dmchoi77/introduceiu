@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
 
-    const [toggle, setToggle] = useState<null | Boolean>(null);
+    const [toggle, setToggle] = useState<Boolean>(false);
     const toggleMenu = (): void => {
         setToggle(!toggle);
     }
@@ -18,21 +18,19 @@ const Header: React.FC = () => {
             </header>
             <div className="side-nav">
                 {
-                    toggle === null ?
-                        null :
-                        <nav className={toggle ? "show-side-nav" : "hide-side-nav"}>
-                            <ul className="menu">
-                                <Link to={"/profile"}>
-                                    <li>Profile</li>
-                                </Link>
-                                <Link to={"/works"}>
-                                    <li>Works</li>
-                                </Link>
-                                <Link to={"/photo"}>
-                                    <li>Photo</li>
-                                </Link>
-                            </ul>
-                        </nav>
+                    <nav className={toggle ? "show-side-nav" : "hide-side-nav"}>
+                        <ul className="menu">
+                            <Link to={"/profile"}>
+                                <li>Profile</li>
+                            </Link>
+                            <Link to={"/works"}>
+                                <li>Works</li>
+                            </Link>
+                            <Link to={"/photo"}>
+                                <li>Photo</li>
+                            </Link>
+                        </ul>
+                    </nav>
                 }
             </div>
         </>
